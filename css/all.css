@@ -4,7 +4,8 @@ body {
 }
 .wrapper {
 	min-width: 320px;
-	font-size:16px;	line-height:24px;
+	font-size:16px;
+	line-height:24px;
 	margin: 0;
 }
 .wrapper p {margin:0 0 24px;}
@@ -192,7 +193,8 @@ h2,
 
 h2 {
 	font-weight:400;
-	font-size:18px;	line-height:20px;
+	font-size:18px;
+	line-height:20px;
 	text-transform:uppercase;
 	position:absolute;
 	margin:0;
@@ -204,7 +206,8 @@ h2 {
 }
 h3 {
 	font-weight:400;
-	font-size:16px;	line-height:24px;
+	font-size:16px;
+	line-height:24px;
 	text-transform:uppercase;
 	margin:0;
 }
@@ -230,7 +233,8 @@ h3 {
 	margin:0 0 31px;
 	z-index:1;
 }
-#header:after {	content:"";
+#header:after {
+	content:"";
 	background: url(../images/header-liquid.png) no-repeat 0 0;
 	width:405px;
 	height:120px;
@@ -244,12 +248,15 @@ h3 {
 	background-size: cover;
 }
 #header .head-wrap {
-	font-size:0;	line-height:0;
+	font-size:0;
+	line-height:0;
 	margin:0 -32px;
 }
 #header .head-wrap .hold-logo,
 #header .head-wrap .head-hold {
-	display:inline-block;	vertical-align:top;	padding:0 32px;
+	display:inline-block;
+	vertical-align:top;
+	padding:0 32px;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -270,23 +277,29 @@ h3 {
 #header .head-wrap .head-up .info-list {margin:0 -40px;}
 
 #header .head-wrap .head-up .info-list li {
-	display:inline-block;	vertical-align:middle;
-	font-size:12px;	line-height:14px;	padding:0 40px;
+	display:inline-block;
+	vertical-align:middle;
+	font-size:12px;
+	line-height:14px;
+	padding:0 40px;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 #header .head-wrap .head-up .info-list .icon {
-	display:inline-block;	vertical-align:middle;
-	padding:0 4px 0 0;}
+	display:inline-block;
+	vertical-align:middle;
+	padding:0 4px 0 0;
+}
 #header .head-wrap .head-down .head-list {
 	float:left;
 	margin:0 -10px;
 	padding:17px 0 0;
 }
 #header .head-wrap .head-down .head-list li {
-	display:inline-block;	vertical-align:top;
+	display:inline-block;
+	vertical-align:top;
 	padding:0 10px;
 }
 #header .head-wrap .head-down .head-list li a {
@@ -341,7 +354,9 @@ h3 {
 	padding:13px 21px 17px 17px;
 }
 #search-box .text {
-	float:left;	font-size:12px;	line-height:14px;
+	float:left;
+	font-size:12px;
+	line-height:14px;
 	padding:4px 0 0;
 }
 #search-box .search_btn {float:right;}
@@ -378,7 +393,8 @@ h3 {
 .category-box .category-list li {margin:0 0 18px;}
 
 .category-box .category-list li a {
-	font-size:16px;	line-height:18px;
+	font-size:16px;
+	line-height:18px;
 	text-transform:uppercase;
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -583,8 +599,8 @@ h3 {
 .fade-gallery .close {
 	display:none;
 	position:absolute;
-	top:0;
-	right:0;
+	top:15px;
+	right:15px;
 	width:30px;
 	height:30px;
 	color:#fff;
@@ -623,7 +639,29 @@ h3 {
 .fade-gallery > .empty-marker:nth-of-type(12):empty ~ .switcher .thumbnail:nth-of-type(12) {
 	display:none;
 }
-#main .open-modal:checked ~ .product-box .product-images {width:82%;}
+#main .open-modal:checked ~ .product-box .product-images {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width:100%;
+	padding: 0;
+	background: #fff;
+	z-index: 1000;
+	overscroll-behavior: none;
+}
+#main .open-modal:checked ~ .product-box .fade-gallery .holder-img {
+	height: 100vh;
+	padding: 0 180px;
+	box-sizing: border-box;
+}
+#main .open-modal:checked ~ .product-box .fade-gallery .holder-img img {
+	height: 100%;
+	width: 100%;
+	max-width: inherit;
+	max-height: inherit;
+	object-fit: contain;
+}
 #main .open-modal:checked ~ .product-box .fade-gallery .close {display:block;}
 #main .open-modal:checked ~ .product-box .fade-gallery label[for="modal"] > span:first-child {display:none;}
 #main .open-modal:checked ~ .product-box .product-description {
@@ -644,9 +682,11 @@ h3 {
 .switch-color .color-list {margin:0 -8px;}
 
 .switch-color .color-list li {
-	display:inline-block;	vertical-align:top;
+	display:inline-block;
+	vertical-align:top;
 	position:relative;
-	height:30px;	padding:21px 8px 0;
+	height:30px;
+	padding:21px 8px 0;
 	z-index:2;
 }
 .switch-color .color-list li .color-circle {
@@ -669,7 +709,8 @@ h3 {
 	display:none;
 	text-align:center;
 	font-weight:700;
-	font-size:12px;	line-height:14px;
+	font-size:12px;
+	line-height:14px;
 	position:absolute;
 	top:1px;
 	left:16px;
@@ -750,12 +791,14 @@ h3 {
 }
 .product-description h1 {
 	font-weight:400;
-	font-size:30px;	line-height:36px;
+	font-size:30px;
+	line-height:36px;
 	margin:0 0 17px;
 }
 .product-description .article {
 	display:block;
-	font-size:12px;	line-height:14px;
+	font-size:12px;
+	line-height:14px;
 	margin:0 0 15px;
 }
 .product-description .icon {
@@ -769,22 +812,26 @@ h3 {
 }
 .product-description .price-hold {
 	display:block;
-	font-size:30px;	line-height:33px;
+	font-size:30px;
+	line-height:33px;
 	text-decoration:line-through;
 }
 .product-description .price {
 	display:block;
-	font-size:48px;	line-height:50px;
+	font-size:48px;
+	line-height:50px;
 	margin:0 0 6px;
 }
 .product-description .addition-grey {
 	display:block;
-	font-size:10px;	line-height:12px;
+	font-size:10px;
+	line-height:12px;
 	margin:0 0 2px;
 }
 .product-description .addition-black {
 	display:block;
-	font-size:12px;	line-height:16px;
+	font-size:12px;
+	line-height:16px;
 	margin:0 0 34px;
 	padding:0 140px 0 0;
 }
@@ -798,20 +845,29 @@ h3 {
 	margin:0 -6px;
 }
 .product-description .pay-list li {
-	display:inline-block;	vertical-align:top;	padding:0 6px;
+	display:inline-block;
+	vertical-align:top;
+	padding:0 6px;
 	margin:0 0 11px;
 }
 
 .info-box {
-	font-size:0;	line-height:0;
+	font-size:0;
+	line-height:0;
 	position:relative;
 	padding:0 0 0 97px;
 	margin:0 0 22px;
 }
-.info-box:after {	content:"";	display:block;	clear:both;}
+.info-box:after {
+	content:"";
+	display:block;
+	clear:both;
+}
 .info-box .grey-box,
 .info-box .gold-box {
-	display:inline-block;	vertical-align:top;	-moz-box-sizing: border-box;
+	display:inline-block;
+	vertical-align:top;
+	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -825,7 +881,8 @@ h3 {
 	padding:27px 115px 26px 41px;
 }
 .info-box .grey-box .grey-list li {
-	font-size:16px;	line-height:24px;
+	font-size:16px;
+	line-height:24px;
 	margin:0 0 16px;
 }
 .info-box .gold-box {
@@ -858,15 +915,20 @@ h3 {
 }
 .info-box .gold-box .gold-list li {
 	font-weight:700;
-	font-size:14px;	line-height:18px;
+	font-size:14px;
+	line-height:18px;
 	position:relative;
 	margin:0 0 20px;
 }
 .info-box .gold-box .gold-list li .icon {
-	display:inline-block;	vertical-align:top;	padding:0 10px 0 0;
+	display:inline-block;
+	vertical-align:top;
+	padding:0 10px 0 0;
 }
 .info-box .gold-box .gold-list li .gold-text {
-	display:inline-block;	vertical-align:top;}
+	display:inline-block;
+	vertical-align:top;
+}
 .info-box .gold-box .gold-list li .tel {
 	display:block;
 	padding:3px 0 0;
@@ -885,11 +947,13 @@ h3 {
 }
 .detail-box .detail-hold {
 	overflow:hidden;
-	font-size:0;	line-height:0;
+	font-size:0;
+	line-height:0;
 	margin:0 -18px;
 }
 .detail-box .detail-hold .col {
-	display:inline-block;	vertical-align:top;
+	display:inline-block;
+	vertical-align:top;
 	padding:0 18px;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
@@ -913,7 +977,8 @@ h3 {
 	height:auto;
 }
 .detail-box .detail-hold .col p {
-	font-size:16px;	line-height:24px;
+	font-size:16px;
+	line-height:24px;
 }
 
  /* related tabs start */
@@ -953,7 +1018,9 @@ h3 {
 	clear:both;
 }
 .tab-menu .nav li {
-	display:inline-block;	vertical-align:top;	padding:0 19px;
+	display:inline-block;
+	vertical-align:top;
+	padding:0 19px;
 }
 .tab-menu .nav label {
 	font-size:18px;
@@ -1151,7 +1218,8 @@ h3 {
 .brand-link .price {
 	display:block;
 	font-weight:700;
-	font-size:16px;	line-height:24px;
+	font-size:16px;
+	line-height:24px;
 	position:relative;
 	padding:0 0 0 18px;
 	margin:0 0 7px 40px;
@@ -1204,8 +1272,10 @@ h3 {
 	z-index:1;
 }
 .yellow-box .yellow-list li {
-	display:inline-block;	vertical-align:top;
-	max-width:183px;	padding:0 59px;
+	display:inline-block;
+	vertical-align:top;
+	max-width:183px;
+	padding:0 59px;
 }
 .yellow-box .yellow-list li .icon {
 	display:block;
@@ -1213,18 +1283,22 @@ h3 {
 }
 .yellow-box .yellow-list li .yellow-text {
 	display:block;
-	font-size:18px;	line-height:24px;
+	font-size:18px;
+	line-height:24px;
 	color:#000;
 }
 
 .catalog-box {
 	overflow:hidden;
 	margin:0 -10px 120px;
-	font-size:0;	line-height:0;
+	font-size:0;
+	line-height:0;
 }
 .catalog-box .col {
-	display:inline-block;	vertical-align:top;
-	width:25%;	padding:0 10px;
+	display:inline-block;
+	vertical-align:top;
+	width:25%;
+	padding:0 10px;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -1308,10 +1382,13 @@ h3 {
 }
 .about-box .about-hold {
 	margin:0 -10px;
-	font-size:0;	line-height:0;
+	font-size:0;
+	line-height:0;
 }
 .about-box .about-hold .col {
-	display:inline-block;	vertical-align:top;	width:50%;
+	display:inline-block;
+	vertical-align:top;
+	width:50%;
 	padding:0 10px;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
@@ -1332,10 +1409,12 @@ h3 {
 	top:30px;
 }
 .about-box .about-hold p {
-	font-size:16px;	line-height:24px;
+	font-size:16px;
+	line-height:24px;
 }
 .about-box .about-hold .fat-text {
-	font-size:16px;	line-height:24px;
+	font-size:16px;
+	line-height:24px;
 	display:block;
 	font-weight:700;
 }
@@ -1365,7 +1444,8 @@ h3 {
 }
 .foot-wrap {
 	position:relative;
-	font-size:0;	line-height:0;
+	font-size:0;
+	line-height:0;
 	margin:0;
 	padding:0 194px 0 97px;
 }
@@ -1384,7 +1464,9 @@ h3 {
 }
 .foot-wrap .hold-logo,
 .foot-wrap .hold-contact {
-	display:inline-block;	vertical-align:top;	width:34.3%;
+	display:inline-block;
+	vertical-align:top;
+	width:34.3%;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -1413,7 +1495,8 @@ h3 {
 }
 .foot-wrap .contact .contact-list li {
 	position:relative;
-	font-size:12px;	line-height:16px;
+	font-size:12px;
+	line-height:16px;
 }
 .foot-wrap .contact .contact-list .address:before {content:'Inhaber: Andreas Cocco Max-Eyth-Strasse 25 71088 Holzgerlingen Deutschland';}
 .foot-wrap .contact .contact-list .tel:before {content:'Telefon: 07031 / 410968-0';}
@@ -1422,7 +1505,8 @@ h3 {
 
 #threendy_copyright {
 	overflow:hidden;
-	font-size:12px;	line-height:16px;
+	font-size:12px;
+	line-height:16px;
 	padding:20px 0 0;
 }
 @media (max-width: 1400px){
@@ -1644,13 +1728,16 @@ h3 {
 		margin:0 0 10px;
 	}
 	.product-description h1 {
-		font-size:20px;		line-height:26px;
+		font-size:20px;
+		line-height:26px;
 	}
 	.product-description .price {
-		font-size:30px;		line-height:32px;
+		font-size:30px;
+		line-height:32px;
 	}
 	.product-description .price-hold {
-		font-size:20px;		line-height:22px;
+		font-size:20px;
+		line-height:22px;
 	}
 	.product-description .pay-list li {margin:0 0 5px;}
 	
@@ -1729,15 +1816,18 @@ h3 {
 	
 	.info-box .gold-box .gold-list {padding:35px 10px 5px;}
 	.info-box .grey-box .grey-list li {
-		font-size:14px;		line-height:20px;
+		font-size:14px;
+		line-height:20px;
 	}
 	
 	.detail-box .detail-hold .col p {
-		font-size:14px;		line-height:20px;
+		font-size:14px;
+		line-height:20px;
 	}
 	
 	.yellow-box .yellow-list li .yellow-text {
-		font-size:16px;		line-height:20px;
+		font-size:16px;
+		line-height:20px;
 	}
 	
 	.catalog-box .col .box-up {margin:0 0 10px;}
@@ -1750,7 +1840,8 @@ h3 {
 	
 	.about-box .about-hold p,
 	.about-box .about-hold .fat-text {
-		font-size:14px;		line-height:20px;
+		font-size:14px;
+		line-height:20px;
 	}
 	
 	#footer .logo {width:175px;}
